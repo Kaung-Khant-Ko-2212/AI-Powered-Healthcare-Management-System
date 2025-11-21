@@ -1,3 +1,0 @@
-# AI-Powered-Healthcare-Management-System
-
-Designed and developed a comprehensive J2EE-based healthcare management platform, integrating patient-provider connectivity and administrative functionalities for enhanced efficiency. Implemented an AI chatbot for preliminary symptom diagnosis and medical advice, utilizing machine learning principles to deliver personalized healthcare information. Streamlined patient engagement through automated appointment booking, profile management, and health reminders, while providing location-based emergency and routine care services.
