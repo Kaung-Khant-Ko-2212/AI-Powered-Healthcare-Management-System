@@ -19,9 +19,8 @@
 7. [AI & Automation](#ai--automation)
 8. [Key API Endpoints](#key-api-endpoints)
 9. [Available Scripts](#available-scripts)
-10. [Screens & Visuals](#screens--visuals)
-11. [Roadmap](#roadmap)
-12. [Contributing](#contributing)
+10. [Roadmap](#roadmap)
+11. [Contributing](#contributing)
 
 ---
 
@@ -213,18 +212,6 @@ mysql -u root -p ezhealthcare < ../ezdatabase.sql
 
 ---
 
-## Screens & Visuals
-
-| Description          | Preview |
-|----------------------|---------|
-| Patient landing page | ![Homepage](ezhealthare/public/images/EZhealthcare.png) |
-| Appointment flow     | ![Appointment](ezhealthare/public/images/appointment.png) |
-| Doctor analytics     | ![Dashboard](ezhealthare/public/images/doctor.png) |
-
-Add your own screenshots or replace the paths above with deployed URLs/GitHub Assets for richer visuals.
-
----
-
 ## Roadmap
 
 - [ ] Integrate real-time video consultation links
@@ -248,3 +235,4 @@ For major changes, please open an issue first to discuss what you would like to 
 ---
 
 Built with ❤️ to make healthcare more accessible, data-driven, and intelligent.
+
