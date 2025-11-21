@@ -1,0 +1,242 @@
+/*DoctorList.css*/
+/* General Container */
+.doctor-list-container3 {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 260px; /* Same as sidebar width */
+  padding: 20px;
+  }
+  
+  /* Header Filters */
+  .doctor-list-header3 {
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust Filters Section */
+.filters3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds spacing between items */
+    width: 65%; /* Ensure full width for proper alignment */
+}
+
+.filters13  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 20px; /* Space between elements inside filters1 and filters2 */
+}
+
+.filters23 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 10px; /* Space between elements inside filters1 and filters2 */
+    background-color: #F6F8F9;
+}
+
+.filter-select3{
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #D2C8C8;
+    min-width: 150px;
+    width: 50%;
+    background-color: #F6F8F9;
+}
+
+/* Ensure react-select matches the existing filter-select3 styling */
+.filter-select3 .react-select__control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.filter-select3 .react-select__menu {
+  z-index: 1001; /* Ensure dropdown appears above other elements */
+}
+
+.filter-select3 .react-select__option--is-focused {
+  background-color: #007bff;
+  color: white;
+}
+
+.filter-select3 .react-select__option--is-selected {
+  background-color: #0056b3;
+  color: white;
+}
+
+.filter-select3 .react-select__placeholder {
+  color: #999;
+}
+
+/* Optional: Customize the input inside react-select */
+.filter-select3 .react-select__input {
+  padding: 0;
+}
+
+/* Ensure the select fits within the filters13 layout */
+.filters13 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter-search3 {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #D2C8C8;
+    min-width: 150px;
+    width: 100%;
+    background-color: #F6F8F9;
+}
+
+
+/* Filter Buttons Section */
+.filter-buttons3{
+    display: flex;
+    margin-left: 30px;
+    gap: 20px; /* Add spacing between the Search and Reset buttons */
+}
+
+.filter-buttons3 .btn3 {
+    padding: 8px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  .btn-search3 {
+    background-color: #5F94CD;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .btn-reset3 {
+    background-color: #5F94CD;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .btn-search3:hover {
+    background-color: #46709e;
+  }
+  
+  .btn-reset3:hover {
+    background-color: #46709e;
+  }
+  
+  /* Table Styling */
+  .doctor-list-table3 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .doctor-list-table3 th {
+    background-color: #f4f6f8;
+    text-align: left;
+    font-weight: 600;
+    color: #000000;
+    padding: 12px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  .doctor-list-table3 td {
+    padding: 8px;
+    font-weight: 500;
+    border-bottom: 1px solid #e0e0e0;
+    color: #4B4747;
+  }
+  
+  .doctor-list-table3 tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  .doctor-list-table3 tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Actions Buttons */
+  .actions3 .btn3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .btn-edit3 {
+    border-radius: 50%;
+    color: black;
+    padding: 8px;
+  }
+  
+  .btn-delete3 {
+    border-radius: 50%;
+    color: red;
+    padding: 8px;
+  }
+  
+  .btn-details3 {
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    border: 2px solid #5F94CD;
+    color: black;
+    margin-left: 10px;
+  }
+  .text3 {
+    margin: 0%;
+    padding: 3px 10px;
+    font-size: 14px;
+  }
+  
+  .btn-edit3:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.308);
+  }
+  
+  .btn-delete3:hover {
+    color: white;
+    background-color: #d32f2fc2;
+  }
+  
+  .btn-details3:hover {
+    color: white;
+    background-color: #5F94CD;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .doctor-list-header3 {
+      flex-direction: column;
+    }
+  
+    .filter-search3 {
+      min-width: 100%;
+    }
+  
+    .doctor-list-table3 th,
+    .doctor-list-table3 td {
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
+  

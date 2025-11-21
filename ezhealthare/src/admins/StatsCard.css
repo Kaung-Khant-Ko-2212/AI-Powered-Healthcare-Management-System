@@ -1,0 +1,34 @@
+.stats-card3 {
+   width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    padding: 10px;
+    background-color: #CCE4FE;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  .icon3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin-left: 45px;
+  }
+
+  .stats-card3 h3 {
+    color: #827979;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 18px;
+  }
+
+  .stats-card3 p {
+    color: #2C2828;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 0px;
+  }
+  

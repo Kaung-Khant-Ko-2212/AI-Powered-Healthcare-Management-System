@@ -1,0 +1,193 @@
+/* Overlay for the form */
+.doctor-edit-form-overlay3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Main form container */
+.doctor-edit-form3 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollable wrapper for form content */
+.scrollable-form3 {
+  max-height: 80vh; /* Limit height to 80% of viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 10px; /* Optional: Add padding for scrollbar */
+}
+
+/* Close button */
+.close-btn3 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Form group styling */
+.form-group3 {
+  margin-bottom: 15px;
+}
+
+.form-group3 label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group3 input,
+.form-group3 select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group3 select[multiple] {
+  height: 100px;
+}
+
+/* Error message styling */
+.error3 {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Submit button styling */
+.submit-btn3 {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-btn3:hover {
+  background-color: #0056b3;
+}
+
+/* Schedule section styling */
+.schedule-section3 {
+  margin-top: 20px;
+}
+
+.schedule-form3 {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.schedule-form3 h4 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+/* Schedule row styling */
+.schedule-row3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.schedule-row3 span {
+  margin: 0 5px;
+  width: 70px; /* Fixed width for day labels */
+}
+
+.schedule-row3 input[type="time"] {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.schedule-row3 .remove-btn3 {
+  margin-left: 10px;
+}
+
+/* Selected location styling */
+.selected-location3 {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.selected-location3 span {
+  flex-grow: 1;
+}
+
+/* Remove button styling */
+
+.toggle-schedule-btn {
+  margin: 10px 0;
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.toggle-schedule-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.location-checkbox {
+  margin: 5px 0;
+}
+.location-header {
+  margin: 10px 0;
+  font-weight: bold;
+}
+.schedule-row3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+.add-schedule-btn {
+  margin: 10px 0;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-schedule-btn:hover {
+  background-color: #45a049;
+}
+.remove-btn3 {
+  padding: 2px 8px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.remove-btn3:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,371 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.d5container_filter_bar {
+ padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters-search {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.filters-dropdown {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.filters-date {
+  display: flex;
+  align-items: center;
+}
+
+.specialties {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.specialty-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.specialist-list {
+  padding: 20px;
+}
+
+.specialist-list-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.specialist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.specialist-card {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+}
+
+.specialist-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.filter-bar {
+  border-bottom: 1px solid #ccc;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+.card-body {
+  text-align: center;
+  padding: 10px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Card container */
+.specialist-card {
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.specialist-card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+
+
+/* Card container */
+.specialist-card {
+  width: 260px; /* Increased width for a more balanced layout */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px auto; /* Centering card and adding spacing */
+}
+
+/* Image styling */
+.specialist-card-img {
+  width: 100%;
+  height: 160px; /* Adjusted height for proportionality */
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+/* Card body */
+.specialist-card-body {
+  padding: 6px;
+}
+
+/* Header with name and heart icon */
+.specialist-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+/* Name styling */
+.specialist-card-name {
+  font-size: 18px; /* Slightly larger font size */
+  font-weight: bold;
+  color: #0F4C8D; /* Blue color for the name */
+  margin: 0;
+}
+
+/* Heart icon styling */
+.specialist-card-heart {
+  color: #e11d48; /* Red color */
+  font-size: 20px; /* Slightly larger heart icon */
+}
+
+/* Specialty text */
+.specialist-card-specialty {
+  font-size: 15px; /* Slightly larger text */
+  color: #6b7280; /* Gray color */
+  margin: 0;
+}
+
+
+
+
+.specialties-section {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+  border-radius: 10px;
+}
+
+.specialty-item {
+  border: 1px solid #e2e6ea;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.specialty-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.specialty-item img {
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  padding: 5px;
+  align-items: center;
+}
+
+.d5row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.d5col-lg-1 {
+  flex: 1 1 calc(100% / 7 - 10px); /* Ensures 7 columns fit in a row */
+  max-width: calc(100% / 7 - 10px);
+}
+/* General container styling */
+.d5_SLcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+/* Header styles */
+.d5_SLheader {
+  display: flex;
+  align-items: center;
+}
+
+.d5_SLtitle {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.d5_SLcount {
+  color: green;
+}
+
+/* Controls styling */
+.d5_SLcontrols {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Dropdown styling */
+.d5_SLdropdown {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Button styling */
+.d5_SLbutton {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #6699CC;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.d5_SLbutton:hover {
+  background-color: #557AA0; /* Darker shade for hover effect */
+}
+
+/*  FilterBar.js*/
+.d5container_filter_bar{
+  background-color: #f8f9fa;
+  
+  border-radius: 10px;
+}
+.filters-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 0px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.d5filters-search {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.filters-search:focus {
+  border-color: #6699cc;
+}
+
+.filters-dropdown {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 180px;
+}
+
+.filters-date {
+  display: none;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #5F94CD;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #4a7ab3;
+}
+
+@media (max-width: 768px) {
+  .filters-container {
+    flex-direction: column;
+  }
+
+  .filters-search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .specialties {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specialty-button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}

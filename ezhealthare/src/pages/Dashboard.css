@@ -1,0 +1,44 @@
+.dashboard2 {
+  margin-left: 260px; /* Same as sidebar width */
+  padding: 20px;
+}
+
+.dashboard-cards2 {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px; /* Adds space between the cards */
+}
+
+.dashboard-card {
+  background: #cee9ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%; /* Adjust width as needed */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card h3 {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+}
+
+.dashboard-charts2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}

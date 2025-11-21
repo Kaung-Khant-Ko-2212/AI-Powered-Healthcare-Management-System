@@ -1,0 +1,76 @@
+.doctor-detail-card3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 25px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 700px; /* Increased width */
+  }
+  
+  .doctor-detail-content3 {
+    text-align: center;
+  }
+  
+  .close-btn3 {
+    float: right;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 7px 10px;
+  }
+  
+  .doctor-info3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .human-icon3 {
+    padding: 20px 10px 0px 0px;
+    width: 8%;
+  }
+  
+  .left-side3{
+    width: 40%;
+    text-align: left;
+  }
+
+  .right-side3 {
+    width: 60%;
+    text-align: left;
+  }
+
+  .question3 {
+    color: #827979;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+
+  .answer3 {
+    color: #2C2828;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .location-list3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .schedule3 {
+    text-align: right;
+    color: #0F4C8D;
+  }
+
+  .close-btn3:hover {
+    border: none;
+    background: transparent;
+    background-color: #a59b9b;
+    border-radius: 50%;
+  }
+  

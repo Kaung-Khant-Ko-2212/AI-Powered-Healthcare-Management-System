@@ -1,0 +1,119 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 260px;  /* Fixed width */
+  height: 100vh; /* Full height */
+  background-color: #5f94cd;
+  color: black;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: fixed; /* Fixes the sidebar position */
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo2 {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar-menu-item2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  cursor: pointer;
+  padding: 10px;
+  transition: background 0.3s;
+  border-radius: 6px;
+  font-size: 16px;
+  position: relative; /* Ensures submenu stays within the menu */
+}
+
+.sidebar-menu-item2:hover {
+  background-color: #5a78a1;
+}
+
+/* Icons */
+.menu-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Menu Titles */
+.menu-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Updated Dropdown Menu */
+.submenu {
+  list-style: none;
+  padding-left: 30px;
+  padding: 0;
+  margin: 0;
+  background: #5a78a1;
+  border-radius: 5px;
+  overflow: hidden;
+  position: absolute;
+  top: 100%; /* Positions submenu right below the parent item */
+  left: 0;
+  width: 100%;
+  display: none; /* Initially hidden */
+  z-index: 10; /* Ensures it appears above other elements */
+}
+
+.menu-item:hover .submenu {
+  display: block; /* Show submenu on hover */
+}
+
+.submenu li {
+  padding: 10px;
+  text-align: left;
+  transition: background 0.3s;
+}
+
+.submenu li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Links */
+.link2 {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Active Styling */
+.menu-item.active {
+  background-color: #4f6a94;
+}
+.menu-item.active .submenu {
+  display: block; /* Show submenu when active */
+}

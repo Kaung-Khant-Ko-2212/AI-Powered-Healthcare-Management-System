@@ -1,0 +1,98 @@
+/* src/styles/PatientTable.css */
+.patient-table-container3 {
+    padding: 1.5rem;
+    background-color: #f9fafb;
+    min-height: 100vh;
+  }
+
+  .patient-header3 {
+    padding-left: 15px;
+    background-color: #F6F8F9;
+    color: #0F4C8D;
+    border: 1px solid #E3DBDB;
+  }
+  
+  .title3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-top: 15px;
+  }
+  
+  .subtitle3 {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+
+  .patient-body3 { 
+    margin-top: 15px;
+    background-color: #F6F8F9;
+    border: 1px solid #E3DBDB;
+    padding: 0px 20px 20px 20px;
+  }
+  
+  .controls3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .date-input3 {
+    width: 150px; /* Adjust as needed */
+  }
+
+  .search-input3 {
+    flex: 1;
+    max-width: 300px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .hospital-select3 {
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .reset-button3 {
+  height: 40px;
+  padding: 0 15px;
+  margin-left: 10px; /* Space between hospital select and reset button */
+  color: #FFFFFF;
+  font-weight: 600;
+  background-color: #5F94CD; /* Light gray background */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.reset-button3:hover {
+  background-color: #2358a7; /* Slightly darker on hover */
+}
+  .patient-table3 {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #d1d5db;
+    background-color: #EBF5FB;
+  }
+  
+  .patient-table3 th {
+    background-color: #EBF5FB;
+    color: #0F4C8D;
+    font-weight: 600;
+    padding: 0.75rem;
+    text-align: center;
+    border:2px solid #d1d5db;
+  }
+  
+  .patient-table3 td {
+    padding: 0.75rem;
+    border: 2px solid #e5e7eb;
+    font-weight: 500;
+    
+  }
+  

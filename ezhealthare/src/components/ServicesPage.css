@@ -1,0 +1,193 @@
+.services-page {
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+    background-color: #EAF8FF;
+  }
+  
+  /* Header */
+
+  .services-header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .services-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 20px;
+}
+
+/* Service Card */
+.service-card1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    max-width: 1350px;
+    padding: 50px;
+    gap: 130px;
+    opacity: 0; /* Initially invisible */
+    transform: translateX(100%); /* Start off-screen to the right for even cards */
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.service-card1:nth-child(odd) {
+    transform: translateX(-100%); /* Start off-screen to the left for odd cards */
+}
+
+.service-card1:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.service-card1 img {
+    width: 450px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.service-content1 {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-card1 h2 {
+    font-size: 35px;
+    color: #0F4C8D;
+    margin-bottom: 20px;
+    line-height: 60.75px;
+}
+
+.service-card1 p {
+    font-size: 20px;
+    color: #7E7575;
+    margin-bottom: 25px;
+    line-height: 36.45px;
+    text-align:justify;
+}
+
+.service-button1 {
+    background-color: #5F94CD;
+    width:250px;
+    height:50px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-button2 {
+  background-color: #5F94CD;
+  width:250px;
+  height:50px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  border-radius: 36px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-button3 {
+  background-color: #5F94CD;
+  width:250px;
+  height:50px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  border-radius: 36px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-button4 {
+  background-color: #5F94CD;
+  width:250px;
+  height:50px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  border-radius: 36px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-button1:hover {
+    background-color: #3b65b0;
+}
+
+.service-button2:hover {
+    background-color: #3b65b0;
+}
+
+.service-button3:hover {
+    background-color: #3b65b0;
+}
+
+.service-button4:hover {
+    background-color: #3b65b0;
+}
+
+.service-card1.visible {
+    opacity: 1;
+    transform: translateX(0); /* Animate to its original position */
+  }
+  
+  /* Apply the animation */
+  @keyframes easeInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes easeInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Add a delay for each card based on its order */
+  .service-card1:nth-child(odd) {
+    animation: easeInLeft 1.5s ease-in-out forwards;
+  }
+  
+  .service-card1:nth-child(even) {
+    animation: easeInRight 1.5s ease-in-out forwards;
+  }
+  
+  /* Delay the animation of even and odd cards */
+  .service-card1:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .service-card1:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .service-card1:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .service-card1:nth-child(4) {
+    animation-delay: 0.4s;
+  }

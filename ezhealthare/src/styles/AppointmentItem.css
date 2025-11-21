@@ -1,0 +1,46 @@
+.appointment-item3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #555555;
+  }
+  
+  .appointment-item3:last-child {
+    border-bottom: none;
+  }
+  
+  .appointment-item3 span {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .appointment-item3 span:first-child {
+    text-align: left;
+  }
+  
+  .appointment-item3 span:last-child {
+    text-align: right;
+    font-weight: 600;
+    color: #4B4747;
+  }
+
+  
+  .gp13 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .gp23 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    gap: 10px;
+  }
+
+  

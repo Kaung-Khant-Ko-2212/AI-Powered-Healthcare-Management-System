@@ -1,0 +1,408 @@
+/* General Styles */
+.home-page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+    background-color: #ffffff;
+}
+
+/* NavBar Section */
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    height: 600px;
+    background-color: #E2F2FE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+.text-content {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #000000;
+    margin-left: 50px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: #0F4C8D;
+    margin-left: 250px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.hero p {
+    font-size: 24px;
+    color: #555555;
+    margin-left: 50px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.hero img {
+    width: 633px;
+    height: 354px;
+    position: absolute;
+    right: 7px;
+    bottom: 155px;
+}
+/* Services Section */
+.services {
+    padding: 0px 80px;
+    
+}
+
+.service-title1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    color: #544F4F;
+    text-align: center;
+}
+
+.services-container {
+    display: flex; /* Use flexbox for a simpler layout */
+    flex-wrap: wrap; /* Allow multiple rows */
+    gap: 90px; /* Spacing between cards */
+    justify-content: space-around;
+}
+
+.service-card {
+    
+    width: 430px;
+    height: 357px; /* Fixed height */
+    background-color: #F6F8F9;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    text-align: center;
+    position: relative; /* Allows stacking elements */
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.service-card h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #0F4C8D;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.service-card p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #4B4747;
+    text-align: justify;
+    padding: 0 40px;
+}
+
+/* Responsive Design (for smaller screens) */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+}
+
+/* Specialized Doctors Section */
+.specialized-doctors {
+    text-align: center;
+    padding: 50px 40px;
+}
+
+.specialized-doctors h2 {
+
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 70px;
+    color: #544F4F;
+    text-align: center;
+}
+
+.specialized-doctors .see-all {
+    display: inline-block;
+    font-size: 1rem;
+    color: #0056d6;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.specialized-doctors .see-all:hover {
+    text-decoration: underline;
+}
+
+.doctor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+}
+
+.doctor-card {
+    background-color: #F8F8F8;
+    border-radius: 20px;
+    width: 327px;
+    height: 350px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.doctor-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.doctor-card h3 {
+    font-size: 25px;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+}
+
+.doctor-card p{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Recent Articles Section */
+.recent-articles {
+    padding: 50px 50px;
+}
+
+.recent-articles h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 70px;
+    color: #544F4F;
+    text-align: center;
+}
+
+.recent-articles .see-all {
+    display: inline-block;
+    font-size: 1rem;
+    color: #0056d6;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.recent-articles .see-all:hover {
+    text-decoration: underline;
+}
+
+.article-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+.article-card {
+    background-color: #ffffff;
+    width: 330px;
+    padding: 20px;
+    text-align: center;
+}
+
+.article-card img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.article-card h3 {
+    font-size: 24px;
+    color: #0F4C8D;
+    margin-bottom: 10px;
+    text-align:justify;
+}
+
+.article-card p {
+    font-size: 18px;
+    color: #000000;
+    text-align:justify;
+}
+/* FAQ Section */
+.faq-section {
+    padding: 50px 20px;
+    text-align: center;
+    align-items: center;
+    width: 900px;
+    margin: auto;
+}
+
+.faq-title {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 70px;
+    color: #544F4F;
+    text-align: center;
+}
+
+.faq-section .see-all {
+    display: inline-block;
+    font-size: 1rem;
+    color: #0056d6;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.faq-section .see-all:hover {
+    text-decoration: underline;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.faq-image {
+    width: 60%; /* Left half of the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+
+.faq-image img {
+    width: 1000px; /* Adjust image size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.faq-questions {
+    width: 70%; /* Right half of the page */
+    font-size: 20px;
+    padding-left: 20px; /* Space between image and questions */
+    padding-right: 20px; /* Prevent questions from being too close to the right edge */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    display: flex;
+    color: #0F4C8D;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center; /* Vertically center the content */
+}
+
+.faq-answer {
+    font-size: 1rem;
+    color: #333;
+    padding: 10px;
+    display: none;
+}
+
+.faq-answer.hidden {
+    display: none;
+}
+
+/* Footer Section */
+footer {
+    background-color: #9EB3B6;
+    color: #333;
+    padding: 50px 20px;
+    height: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-content h3 {
+    font-size: 26px;
+    color: #000000;
+    line-height:31.59px;
+}
+
+.footer-logo img {
+    width: 55px;
+}
+
+.footer-logo p {
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-left: 76px;
+    color: #4B4747;
+    text-align: left;
+    max-width: 600px;
+}
+
+.social-media a {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #0056d6;
+    text-decoration: none;
+}
+
+.footer-links ul,
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.footer-links ul li a,
+.footer-contact ul li {
+    font-size: 22px;
+    color: #4B4747;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-links ul li a:hover,
+.footer-contact ul li:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}

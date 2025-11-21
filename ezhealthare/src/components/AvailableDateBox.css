@@ -1,0 +1,383 @@
+.react-calendar__tile--locked {
+  background-color: #ffcccc;
+  color: #ff0000;
+}
+
+.unavailable-date {
+  background-color: #f0f0f0;
+  color: #a0a0a0;
+}
+
+.available-date {
+  background-color: #ccffcc;
+  color: #006600;
+}
+
+
+.fully-booked-date {
+  background-color: #f8d7da; /* Light red background for fully booked dates */
+  color: #721c24; /* Dark red text for fully booked dates */
+}
+
+.approved-cancellation-date {
+  background-color: #d4edda; /* Light green background for approved cancellation dates */
+  color: #155724; /* Dark green text for approved cancellation dates */
+}
+.appointment-booking-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  /* Calendar Section */
+  .calendar-section {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .calendar-section h2 {
+    margin-bottom: 24px;
+    color: #1e293b;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .calendar-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 20px 0;
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #4a5568;
+    font-weight: 500;
+  }
+  
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+  }
+  
+  .legend-color.available {
+    background-color: #4ade80;
+    border: 2px solid #22c55e;
+  }
+  
+  .legend-color.partial {
+    background-color: #fbbf24;
+    border: 2px solid #f59e0b;
+  }
+  
+  .legend-color.full {
+    background-color: #f87171;
+    border: 2px solid #ef4444;
+  }
+  
+  .legend-color.booked {
+    background-color: #2196F3;
+  }
+  
+  .legend-color.unavailable {
+    background-color: #9e9e9e;
+  }
+  
+  /* Calendar Tile Styles */
+  .react-calendar {
+    width: 100% !important;
+    border: none !important;
+    background: transparent !important;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  .react-calendar__navigation {
+    margin-bottom: 20px;
+  }
+  
+  .react-calendar__navigation button {
+    color: #1e293b;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px;
+    background: none;
+    border-radius: 8px;
+  }
+  
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: #f8fafc;
+  }
+  
+  /* Calendar Grid Spacing */
+  .react-calendar__month-view__days {
+    display: grid !important;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px !important;
+    padding: 8px;
+  }
+  
+  .react-calendar__tile {
+    padding: 16px 8px !important;
+    font-size: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin: 0 !important;
+    max-width: initial !important;
+  }
+  
+  /* Adjust weekday headers to match grid */
+  .react-calendar__month-view__weekdays {
+    display: grid !important;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px !important;
+    padding: 8px;
+    margin-bottom: 0 !important;
+  }
+  
+  .react-calendar__month-view__weekdays__weekday {
+    padding: 8px 0 !important;
+    text-align: center;
+  }
+  
+  .available-date {
+    background-color: #f0fdf4 !important;
+    color: #166534 !important;
+    border: 2px solid #4ade80 !important;
+  }
+  
+  .partially-booked-date {
+    background-color: #fefce8 !important;
+    color: #854d0e !important;
+    border: 2px solid #fbbf24 !important;
+  }
+  
+  .fully-booked-date {
+    background-color: #fef2f2 !important;
+    color: #991b1b !important;
+    border: 2px solid #f87171 !important;
+  }
+  
+  .available-date:hover,
+  .partially-booked-date:hover,
+  .fully-booked-date:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .full-slots {
+    background-color: #ffebee !important;
+    color: #f44336 !important;
+  }
+  
+  .user-booked {
+    background-color: #e3f2fd !important;
+    color: #2196F3 !important;
+  }
+  
+  .unavailable-date {
+    background-color: #f5f5f5 !important;
+    color: #9e9e9e !important;
+  }
+  
+  .react-calendar__tile:disabled {
+    background-color: #f1f5f9 !important;
+    color: #cbd5e1 !important;
+    cursor: not-allowed;
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #2563eb !important;
+    color: white !important;
+    border: 2px solid #2563eb !important;
+  }
+  
+  /* Time Slots Section */
+  .time-slots-section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .time-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+  }
+  
+  .time-slot-button {
+    position: relative;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .time-slot-button:hover:not(:disabled) {
+    border-color: #2196F3;
+    background-color: #e3f2fd;
+  }
+  
+  .time-slot-button.selected {
+    border-color: #2196F3;
+    background-color: #e3f2fd;
+  }
+  
+  .time-slot-button.full {
+    border-color: #f44336;
+    background-color: #ffebee;
+    cursor: not-allowed;
+  }
+  
+  .time-slot-button.booked {
+    border-color: #2196F3;
+    background-color: #e3f2fd;
+    cursor: not-allowed;
+  }
+  
+  .status-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #f44336;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  
+  .time-slot-button.booked .status-badge {
+    background: #2196F3;
+  }
+  
+  .book-appointment-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+  }
+  
+  .book-appointment-button:hover:not(:disabled) {
+    background-color: #1976D2;
+  }
+  
+  .book-appointment-button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+  }
+  
+  .no-slots-message {
+    text-align: center;
+    color: #757575;
+    font-style: italic;
+  }
+  
+  .booking-count {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+  }
+  
+  .time-slot-button.full {
+    opacity: 0.7;
+    background-color: #ffebee;
+  }
+  
+  .time-slot-button.full .booking-count {
+    color: #f44336;
+  }
+
+  .error-message-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    max-width: 350px;
+    background-color: #fdeded;
+    border-left: 4px solid #ef5350;
+    border-radius: 4px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: slideIn 0.3s ease-out;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .error-message-content {
+    flex-grow: 1;
+    color: #d32f2f;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .error-close-button {
+    background: none;
+    border: none;
+    color: #d32f2f;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 18px;
+    line-height: 1;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .error-close-button:hover {
+    opacity: 1;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .calendar-legend {
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .calendar-section {
+      padding: 20px;
+    }
+    
+    .react-calendar__tile {
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,129 @@
+.calendar-container3 {
+  margin: 20px;
+  background-color: white;
+  border-radius: 0dvb;
+  overflow: hidden;
+}
+
+.calendar-header3 {
+  padding: 15px;
+  background-color: #F6F8F9;
+  color: #0F4C8D;
+  border: 1px solid #E3DBDB;
+}
+
+.calendar-header-h23 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.calendar-header-p3 {
+  font-size: 16px;
+  color: #555;
+}
+
+.calendar-body3 { 
+  margin-top: 15px;
+  background-color: #F6F8F9;
+  border: 1px solid #E3DBDB;
+  padding: 0px 20px 20px 20px;
+}
+
+.filter-group3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-btn3 {
+  background: #5F94CD;
+  color: white;
+  cursor: pointer;
+  padding: 6px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-weight: 600;
+}
+
+.search-btn3:hover {
+  background: #2358a7;
+}
+
+
+.date-picker3, .hospital-selector3 {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Calendar Grid Styles */
+.calendar3 {
+  overflow-x: auto;
+  width: 100%;
+}
+.calendar-grid3 {
+  display: grid;
+  grid-template-columns: 100px repeat(5, 1fr);
+  border-top: 1px solid #ddd;
+}
+
+.calendar-row3 {
+  display: contents;
+}
+.calendar-cell3 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Space between cards */
+  min-height: 50px;
+  background-color: #EBF5FB;
+}
+
+.calendar-cell3 {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.header3 .calendar-cell3 {
+  background-color: #EBF5FB;
+  font-weight: bold;
+}
+
+.time-slot-header3 {
+  background-color: #EBF5FB;
+}
+
+.time-slot3 {
+  font-weight: bold;
+  background-color: #EBF5FB;
+}
+
+.day-header3 {
+  font-size: 14px;
+}
+
+/* Appointment Card Styles */
+.appointment-card3 {
+  background-color: #DEF6E0; /* Light green */
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 400px;
+  color: #333;
+  margin: 5px 0;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-name3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.appointment-time3 {
+  font-size: 13px;
+  color: #666;
+}

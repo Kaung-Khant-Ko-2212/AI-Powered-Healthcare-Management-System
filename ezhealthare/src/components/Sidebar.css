@@ -1,0 +1,252 @@
+.sidebar {
+  width: 260px;
+  background-color: #5f94cd; 
+  color: #111010; /* Neutral dark text */
+  padding: 20px;
+  height: 135vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0e0e0e;
+}
+
+.sidebar-section {
+  margin-bottom: 50px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  padding: 12px 15px;
+  margin: 5px 0;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  background-color: #d2c8c8; /* White background for list items */
+  transition: all 0.3s ease;
+  color: #0e0e0e; /* Healthcare blue for text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for elevation */
+}
+
+.sidebar-item:hover {
+  background-color: #d2c8c8; /* Light blue hover effect */
+  color: #005bb5; /* Darker blue text on hover */
+}
+
+.sidebar-item.active {
+  background-color: #0078d4; /* Blue background for active state */
+  color: #ffffff; /* White text for active item */
+  font-weight: bold;
+}
+
+.sidebar-item a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.doctor-section .doctor-title {
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-color: #d2c8c8;
+}
+
+.doctor-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.doctor-list .sidebar-item {
+  margin: 5px 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #d2c8c8; /* Very light blue for submenus */
+  border-radius: 5px;
+}
+
+.doctor-list .sidebar-item:hover {
+  background-color: #dceeff; /* Light blue hover for submenus */
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #0078d4;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-toggle:hover {
+  background-color: #e6f2fc;
+  color: #005bb5;
+}
+
+.article-dropdown {
+  margin: 5px 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #d2c8c8; /* Very light blue for submenus */
+  border-radius: 5px;
+}
+
+.article-dropdown .sidebar-item {
+  padding: 12px 15px;
+  font-size: 14px;
+  background-color: #f9f9f9; /* Light gray for dropdown items */
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.article-dropdown .sidebar-item:hover {
+  background-color: #e6f2fc;
+  color: #005bb5;
+}
+
+.dropdown-container.open .dropdown-toggle {
+  background-color: #0078d4; /* Active dropdown header background */
+  color: #ffffff; /* White text for active dropdown */
+}
+
+/* Doctor Section */
+.doctor-section {
+  position: relative;
+}
+
+.doctor-title {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.dropdown-collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f8f9fa;
+}
+
+.dropdown-collapse.show {
+  max-height: 500px; /* Adjust based on content height */
+  transition: max-height 0.3s ease-in;
+}
+
+.doctor-list {
+  padding-left: 30px;
+  list-style: none;
+}
+
+.doctor-list .sidebar-item {
+  padding: 8px 15px;
+}
+
+/* Article Section */
+.dropdown-container .dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.article-dropdown {
+  padding-left: 30px;
+  list-style: none;
+  background-color: #f8f9fa;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-item {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.sidebar-item.active {
+  background-color: #e3f2fd;
+  border-left: 3px solid #2196f3;
+}
+
+/* Article Section (Floating Dropdown) */
+.article-section {
+  position: relative;
+}
+
+.article-title {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  position: relative;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin: 0px 0;
+}
+
+.article-title .dropdown-arrow {
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+
+.article-dropdown-floating-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  margin-top: 5px;
+}
+
+.article-list {
+  padding: 8px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.article-list .sidebar-item {
+  padding: 8px 20px;
+  transition: background 0.2s;
+}
+
+
+.article-list .sidebar-item:hover {
+  background: #d2c8c8;
+}
+
+.article-list .sidebar-item.active {
+  background: #e3f2fd;
+  border-left: 1px solid #2196f3;
+}

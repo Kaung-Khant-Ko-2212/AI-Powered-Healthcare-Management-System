@@ -1,0 +1,84 @@
+.admin-patient-list3 {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-left: 260px; /* Same as sidebar width */
+
+  }
+  
+  .filter-container3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-container3 select,
+  .filter-container3 input[type="date"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .filter-container3 .search-btn3,
+  .filter-container3 .reset-btn3 {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color:  #5F94CD;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filter-container3 .reset-btn3 {
+    background-color: #6c757d;
+  }
+  
+  .filter-container3 .search-btn3:hover {
+    background-color: #0056b3;
+  }
+  
+  .filter-container3 .reset-btn3:hover {
+    background-color: #5a6268;
+  }
+  
+  .patient-table3 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .patient-table3 th,
+  .patient-table3 td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .patient-table3 th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  .patient-table3 tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .details-btn3 {
+    padding: 5px 8px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 7px;
+    border: 2px solid #5F94CD;
+    color: black;
+  }
+  
+  .details-btn3:hover {
+    color: white;
+    background-color: #5F94CD;
+  }

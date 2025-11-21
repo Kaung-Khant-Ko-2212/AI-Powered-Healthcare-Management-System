@@ -1,0 +1,157 @@
+.doctor-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.profile-section {
+  background: linear-gradient(135deg, #0F4C8D 0%, #0a3d73 100%);
+  padding: 40px 20px;
+  color: white;
+}
+
+.profile-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.profile-image {
+  flex-shrink: 0;
+}
+
+.doctor-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.doctor-name {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.specialty {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.credentials {
+  display: flex;
+  gap: 20px;
+}
+
+.credential-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+.locations-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: #0F4C8D;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.locations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.location-card {
+  flex: 0 1 300px;
+  background: white;
+  padding: 20px;
+  padding-bottom: 0px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e2e8f0;
+}
+
+.location-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.location-card.selected {
+  border: 2px solid #3b82f6;
+  background-color: #f0f7ff;
+}
+
+.location-icon {
+  font-size: 24px;
+  color: #3b82f6;
+  margin-bottom: 10px;
+}
+
+.location-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.location-address {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.hospitals-section, .clinics-section {
+  margin-bottom: 0px;
+}
+
+.hospitals-section h3, .clinics-section h3 {
+  color: #0F4C8D;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.booking-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.no-locations {
+  text-align: center;
+  color: #666;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .credentials {
+    justify-content: center;
+  }
+
+  .locations-grid {
+    flex-wrap: wrap;
+  }
+}

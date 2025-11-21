@@ -1,0 +1,8 @@
+.chart2 {
+  background: #f9f9f9; /* Lighter background for a softer look */
+  padding: 25px; /* Increased padding for more space inside */
+  border-radius: 12px; /* Slightly more rounded corners */
+  margin: 15px; /* Increased margin for more space outside */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid #e0e0e0; /* Light border for definition */
+}

@@ -1,0 +1,35 @@
+.dashboard-container3 {
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background: #f6fbff;
+  }
+
+  .main-container3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 30px;
+  }
+
+  .left3 {
+    width: 65%;
+  }
+
+  .right3 {
+    width: 35%;
+  }
+
+  .stats-section3 {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    gap: 40px;
+    width: 100%;
+  }
+  
+  .chart-section3 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  

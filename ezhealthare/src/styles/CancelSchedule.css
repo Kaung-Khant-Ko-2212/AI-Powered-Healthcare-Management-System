@@ -1,0 +1,79 @@
+.cancel-schedule3 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f8ff; /* Light blue background for the page */
+    background-image: url('/public/images/stethoscope-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px; 
+  }
+  
+  .cancel-schedule-container3 {
+    width: 60%;
+    height: auto;
+    margin: 100px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0F4C8D; /* Soft blue for the heading */
+    font-size: 24px;
+  }
+  
+  .form-group3 {
+    margin-bottom: 30px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #4B4747;
+  }
+  .cancel-schedule-input3, .cancel-schedule-select3 {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box; /* Ensures consistent sizing for input and select */
+  }
+  
+  input[type="date"] {
+    padding: 10px; /* Matches the padding of the select box */
+    font-family: inherit; /* Ensures consistent font styles */
+  }
+  
+  input:focus, select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 3px rgba(0, 86, 179, 0.5);
+  }
+  
+  .submit-button3 {
+    width: 100%;
+    padding: 12px;
+    background-color: #5F94CD;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-button3:hover {
+    background-color: #004891e0;
+  }
+  
+  .submit-button3:active {
+    transform: scale(0.98);
+  }
+  
+  

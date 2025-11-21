@@ -1,0 +1,116 @@
+.patient-detail-card3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  .close-btn3 {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .close-btn3:hover {
+    border: none;
+    background: transparent;
+    background-color: #a59b9b;
+    border-radius: 50%;
+  }
+  
+  .card-content3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .action-buttons3 {
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  .btn3 {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-remove3 {
+    color: white;
+    background-color: #5F94CD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .btn-remove3:hover {
+    background-color: #0056b3;
+  }
+  
+ 
+  .que3 {
+    color: #827979;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: -18px;
+  }
+
+  .ans3 {
+    color: #2C2828;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 23px;
+  }  
+
+  .psection3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 2px solid #D2C8C8;
+  }
+
+  .dsection3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .psection-left3, .psection-right3, .dsection-left3 ,.dsection-right3{
+    width: 45%;
+    text-align: left;
+  }
+
+  .human-icon3 {
+    padding: 20px 10px 0px 0px;
+    width: 8%;
+  }
+
+  .remove-btn3{
+    padding : 15px;
+    background-color: #cdd7dd;
+    border-radius: 7px;
+    border: 2px solid #5F94CD;
+    color: black;
+  }
+
+  .remove-btn3:hover {
+    background-color: #5F94CD;
+    color: white;
+  }
